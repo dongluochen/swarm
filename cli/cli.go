@@ -21,11 +21,7 @@ func Run() {
 	app.Email = ""
 
 	app.Flags = []cli.Flag{
-		cli.BoolFlag{
-			Name:   "debug",
-			Usage:  "debug mode",
-			EnvVar: "DEBUG",
-		},
+		cli.BoolFlag{},
 
 		cli.StringFlag{
 			Name:  "log-level, l",
