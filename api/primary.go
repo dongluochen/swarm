@@ -16,6 +16,7 @@ type context struct {
 	statusHandler StatusHandler
 	debug         bool
 	tlsConfig     *tls.Config
+	time          string
 }
 
 type handler func(c *context, w http.ResponseWriter, r *http.Request)
